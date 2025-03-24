@@ -2,8 +2,6 @@
 
 ### 📈 **Stock Price Prediction using LSTM**  
 
-![Stock Prediction](https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Candlestick_chart_scheme_03-en.svg/800px-Candlestick_chart_scheme_03-en.svg.png)  
-
 ## 📌 **Project Overview**  
 This project uses **Long Short-Term Memory (LSTM) neural networks** to predict stock closing prices. We analyze **12+ years (2012–2024) of stock data** from Yahoo Finance, compute key financial metrics, and develop an LSTM-based deep learning model for forecasting.  
 
@@ -17,11 +15,10 @@ This project uses **Long Short-Term Memory (LSTM) neural networks** to predict s
 1. **Data Preprocessing**  
    - Fetched stock data using `yfinance`.  
    - Scaled prices using **MinMaxScaler**.  
-   - Created **120-day historical sequences** for training.  
+   - Created **60-day historical sequences** for training.  
 
 2. **LSTM Model Architecture**  
-   - **Three LSTM layers** (128, 64, 32 neurons).  
-   - **Dropout (0.2) & Batch Normalization** to prevent overfitting.  
+   - **Three LSTM layers** (128, 64, 25 neurons).    
    - **ReLU activation** for stable learning.  
 
 3. **Model Training & Evaluation**  
@@ -69,4 +66,3 @@ Feel free to **fork**, raise issues, or submit pull requests!
 
 ---
 
-This README is engaging, informative, and GitHub-friendly! Let me know if you'd like any modifications. 🚀
